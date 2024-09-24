@@ -168,9 +168,9 @@
         {
             "name": "Cyberpunk-Custom-fork-THEME",
             "tab": {
-                "background": "#FF0055",
+                "background": "#D57BFF",
                 "showCloseButton": "always",
-                "unfocusedBackground": "#D57BFF"
+                "unfocusedBackground": "#FF0055"
             },
             "tabRow": {
                 "background": "#140007"
