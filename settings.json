@@ -1,0 +1,185 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": 
+    [
+        {
+            "command": "unbound",
+            "keys": "ctrl+l"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+up"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollDown"
+            },
+            "id": "User.scrollDown.0",
+            "keys": "ctrl+shift+j"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollUp"
+            },
+            "id": "User.scrollUp.0",
+            "keys": "ctrl+shift+k"
+        },
+        {
+            "command": 
+            {
+                "action": "clearBuffer",
+                "clear": "all"
+            },
+            "id": "User.clearBuffer.87C324ED",
+            "keys": "ctrl+shift+l"
+        }
+    ],
+    "alwaysOnTop": false,
+    "centerOnLaunch": false,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+    "disableAnimations": true,
+    "launchMode": "maximized",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "Cyberpunk-Custom-fork-SCHEME",
+            "cursorColor": "#FFFFFF",
+            "cursorShape": "bar",
+            "experimental.retroTerminalEffect": false,
+            "font": 
+            {
+                "face": "Hack Nerd Font",
+                "size": 9,
+                "weight": "normal"
+            },
+            "intenseTextStyle": "none",
+            "opacity": 90,
+            "scrollbarState": "hidden",
+            "useAcrylic": false
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            }
+        ]
+    },
+    "rendering.disablePartialInvalidation": true,
+    "rendering.graphicsAPI": "direct3d11",
+    "schemes": 
+    [
+        {
+            "name": "Cyberpunk-Custom-fork-SCHEME",
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#6766B3",
+            "brightBlack": "#777777",
+            "brightBlue": "#76C1FF",
+            "brightCyan": "#00FFC8",
+            "brightGreen": "#00FF9C",
+            "brightPurple": "#C592FF",
+            "brightRed": "#FF4081",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFC58",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#0DCDCD",
+            "foreground": "#FF0055",
+            "green": "#009550",
+            "purple": "#D57BFF",
+            "red": "#FF0055",
+            "selectionBackground": "#563466",
+            "white": "#EEFFFF",
+            "yellow": "#F4EF00"
+        }
+    ],
+    "themes": [
+        {
+            "name": "Cyberpunk-Custom-fork-THEME",
+            "tab": {
+                "background": "#FF0055",
+                "showCloseButton": "always",
+                "unfocusedBackground": "#D57BFF"
+            },
+            "tabRow": {
+                "background": "#140007"
+            },
+            "window": {
+                "applicationTheme": "dark"
+            }
+        }
+    ],
+    "theme": "Cyberpunk-Custom-fork-THEME",
+    "useAcrylicInTabRow": false
+}
