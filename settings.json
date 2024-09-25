@@ -4,6 +4,15 @@
     "actions": 
     [
         {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
             "command": "unbound",
             "keys": "ctrl+l"
         },
@@ -16,18 +25,14 @@
             "keys": "ctrl+shift+down"
         },
         {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
             "command": "paste",
             "id": "User.paste",
             "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -36,11 +41,6 @@
             },
             "id": "User.scrollDown.0",
             "keys": "ctrl+shift+j"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -55,19 +55,19 @@
         {
             "command": 
             {
-                "action": "scrollUp"
-            },
-            "id": "User.scrollUp.0",
-            "keys": "ctrl+shift+k"
-        },
-        {
-            "command": 
-            {
                 "action": "clearBuffer",
                 "clear": "all"
             },
             "id": "User.clearBuffer.87C324ED",
             "keys": "ctrl+shift+l"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollUp"
+            },
+            "id": "User.scrollUp.0",
+            "keys": "ctrl+shift+k"
         }
     ],
     "alwaysOnTop": false,
@@ -98,7 +98,7 @@
                 "weight": "normal"
             },
             "intenseTextStyle": "none",
-            "opacity": 90,
+            "opacity": 100,
             "scrollbarState": "hidden",
             "useAcrylic": false
         },
@@ -133,6 +133,18 @@
                 "hidden": false,
                 "name": "Ubuntu",
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{9881bc01-f67a-510a-b48d-bac7c0e8fb7f}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{c2c141a2-e7ab-5225-a662-850742717a4a}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -141,7 +153,6 @@
     "schemes": 
     [
         {
-            "name": "Cyberpunk-Custom-fork-SCHEME",
             "background": "#000000",
             "black": "#000000",
             "blue": "#6766B3",
@@ -157,6 +168,7 @@
             "cyan": "#0DCDCD",
             "foreground": "#FF0055",
             "green": "#009550",
+            "name": "Cyberpunk-Custom-fork-SCHEME",
             "purple": "#D57BFF",
             "red": "#FF0055",
             "selectionBackground": "#563466",
@@ -164,22 +176,32 @@
             "yellow": "#F4EF00"
         }
     ],
-    "themes": [
+    "theme": "Cyberpunk-Custom-fork-THEME",
+    "themes": 
+    [
         {
             "name": "Cyberpunk-Custom-fork-THEME",
-            "tab": {
+            "tab": 
+            {
                 "background": "#D57BFF",
+                "iconStyle": "default",
                 "showCloseButton": "always",
-                "unfocusedBackground": "#FF0055"
+                "unfocusedBackground": "#C90043"
             },
-            "tabRow": {
-                "background": "#140007"
+            "tabRow": 
+            {
+                "background": "#140007FF",
+                "unfocusedBackground": null
             },
-            "window": {
-                "applicationTheme": "dark"
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
             }
         }
     ],
-    "theme": "Cyberpunk-Custom-fork-THEME",
     "useAcrylicInTabRow": false
 }
