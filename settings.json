@@ -13,26 +13,9 @@
             "keys": "ctrl+c"
         },
         {
-            "command": "unbound",
-            "keys": "ctrl+l"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+up"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+down"
-        },
-        {
             "command": "paste",
             "id": "User.paste",
             "keys": "ctrl+v"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -41,6 +24,11 @@
             },
             "id": "User.scrollDown.0",
             "keys": "ctrl+shift+j"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -55,19 +43,19 @@
         {
             "command": 
             {
+                "action": "scrollUp"
+            },
+            "id": "User.scrollUp.0",
+            "keys": "ctrl+shift+k"
+        },
+        {
+            "command": 
+            {
                 "action": "clearBuffer",
                 "clear": "all"
             },
             "id": "User.clearBuffer.87C324ED",
             "keys": "ctrl+shift+l"
-        },
-        {
-            "command": 
-            {
-                "action": "scrollUp"
-            },
-            "id": "User.scrollUp.0",
-            "keys": "ctrl+shift+k"
         }
     ],
     "alwaysOnTop": false,
@@ -105,44 +93,55 @@
         "list": 
         [
             {
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell"
-            },
-            {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
             },
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe /k %AppData%\\yazi\\config\\alias\\yy.cmd",
+                "guid": "{0cddfac5-e5b4-41c8-80ac-7070cdc06acd}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "%USERPROFILE%\\scoop\\persist\\windows-terminal\\settings\\yazi-logo.png",
+                "name": "yy",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "btop",
+                "elevate": true,
+                "guid": "{70cb8bcd-e170-459a-978a-6808f623923a}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "%USERPROFILE%\\scoop\\persist\\windows-terminal\\settings\\6226419.webp",
+                "name": "btop",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{610b607d-c033-5f0d-8b98-36407d9c7848}",
                 "hidden": true,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
-            {
-                "guid": "{9881bc01-f67a-510a-b48d-bac7c0e8fb7f}",
-                "hidden": false,
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{c2c141a2-e7ab-5225-a662-850742717a4a}",
-                "hidden": false,
+                "guid": "{5bcd4a9d-07c6-5a33-a2a3-d5f5912fc866}",
+                "hidden": true,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             }
@@ -183,10 +182,10 @@
             "name": "Cyberpunk-Custom-fork-THEME",
             "tab": 
             {
-                "background": "#D57BFF",
+                "background": "#D57BFFFF",
                 "iconStyle": "default",
                 "showCloseButton": "always",
-                "unfocusedBackground": "#C90043"
+                "unfocusedBackground": "#C90043FF"
             },
             "tabRow": 
             {
