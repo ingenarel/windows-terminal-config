@@ -1,0 +1,2 @@
+- THE IMAGES THAT ARE HERE ARE NOT MADE BY ME, I DOWNLOADED THEM TO USE AS LOGOS FOR THE TABS!!
+scoop, yazi, btop, should be installed
