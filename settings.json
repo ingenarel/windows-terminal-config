@@ -1,6 +1,6 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
-    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
     "actions": 
     [
         {
@@ -9,26 +9,18 @@
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
+            "id": "User.copy.644BA8F2"
         },
         {
             "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
+            "id": "User.paste"
         },
         {
             "command": 
             {
                 "action": "scrollDown"
             },
-            "id": "User.scrollDown.0",
-            "keys": "ctrl+shift+j"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": "User.scrollDown.0"
         },
         {
             "command": 
@@ -37,16 +29,18 @@
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
         },
         {
             "command": 
             {
                 "action": "scrollUp"
             },
-            "id": "User.scrollUp.0",
-            "keys": "ctrl+shift+k"
+            "id": "User.scrollUp.0"
         },
         {
             "command": 
@@ -54,16 +48,42 @@
                 "action": "clearBuffer",
                 "clear": "all"
             },
-            "id": "User.clearBuffer.87C324ED",
-            "keys": "ctrl+shift+l"
+            "id": "User.clearBuffer.87C324ED"
         }
     ],
     "alwaysOnTop": false,
     "centerOnLaunch": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+    "defaultProfile": "{18ac76de-678c-4262-90d5-7cde4a1d6ff5}",
     "disableAnimations": true,
+    "keybindings": 
+    [
+        {
+            "id": "User.scrollUp.0",
+            "keys": "ctrl+shift+k"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "User.scrollDown.0",
+            "keys": "ctrl+shift+j"
+        }
+    ],
     "launchMode": "maximized",
     "newTabMenu": 
     [
@@ -86,31 +106,31 @@
                 "weight": "normal"
             },
             "intenseTextStyle": "none",
-            "opacity": 100,
+            "opacity": 90,
             "scrollbarState": "hidden",
             "useAcrylic": false
         },
         "list": 
         [
             {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "bash",
+                "guid": "{18ac76de-678c-4262-90d5-7cde4a1d6ff5}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "%git_install_root%\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "git bash",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
-            },
-            {
-                "altGrAliasing": true,
-                "antialiasingMode": "grayscale",
-                "closeOnExit": "automatic",
-                "commandline": "%SystemRoot%\\System32\\cmd.exe /k %AppData%\\yazi\\config\\alias\\yy.cmd",
-                "guid": "{0cddfac5-e5b4-41c8-80ac-7070cdc06acd}",
-                "hidden": false,
-                "historySize": 9001,
-                "icon": "%USERPROFILE%\\scoop\\persist\\windows-terminal\\settings\\yazi-logo.png",
-                "name": "yy",
-                "padding": "8, 8, 8, 8",
-                "snapOnInput": true,
-                "startingDirectory": "%USERPROFILE%"
             },
             {
                 "altGrAliasing": true,
@@ -132,22 +152,9 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
-            },
-            {
-                "guid": "{610b607d-c033-5f0d-8b98-36407d9c7848}",
-                "hidden": true,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{5bcd4a9d-07c6-5a33-a2a3-d5f5912fc866}",
-                "hidden": true,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
-    "rendering.disablePartialInvalidation": true,
     "rendering.graphicsAPI": "direct3d11",
     "schemes": 
     [
