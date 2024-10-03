@@ -23,6 +23,10 @@
             "id": "User.scrollDown.0"
         },
         {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -30,10 +34,6 @@
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": "find",
-            "id": "User.find"
         },
         {
             "command": 
@@ -55,33 +55,33 @@
     "centerOnLaunch": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{18ac76de-678c-4262-90d5-7cde4a1d6ff5}",
+    "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
     "disableAnimations": true,
     "keybindings": 
     [
+        {
+            "id": null,
+            "keys": "ctrl+c"
+        },
         {
             "id": "User.scrollUp.0",
             "keys": "ctrl+shift+k"
         },
         {
             "id": null,
-            "keys": "ctrl+c"
+            "keys": "ctrl+v"
         },
         {
             "id": "User.find",
             "keys": "ctrl+shift+f"
         },
         {
-            "id": null,
-            "keys": "ctrl+v"
+            "id": "User.scrollDown.0",
+            "keys": "ctrl+shift+j"
         },
         {
             "id": "User.splitPane.A6751878",
             "keys": "alt+shift+d"
-        },
-        {
-            "id": "User.scrollDown.0",
-            "keys": "ctrl+shift+j"
         }
     ],
     "launchMode": "maximized",
@@ -113,6 +113,12 @@
         "list": 
         [
             {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
                 "altGrAliasing": true,
                 "antialiasingMode": "grayscale",
                 "closeOnExit": "automatic",
@@ -125,12 +131,6 @@
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Command Prompt"
             },
             {
                 "altGrAliasing": true,
@@ -152,6 +152,18 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
+            },
+            {
+                "guid": "{792fb4a4-a5b5-52d7-aa82-bb5e750ca6b4}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{a0f4e87e-81db-5ee2-a102-1e57325510b6}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
